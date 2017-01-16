@@ -21,7 +21,7 @@ Sometimes when a team member pushes their commit to the remote repository at the
 
 Locking the doors in Unreal was pretty simple. All it takes is a branch node requiring a certain key to be active. These keys are activated just by picking them up into your inventory. There are multiple places that this blueprint was copied to. One for each door that we wanted locked or a level transition we wanted to restrict until the player has a certain item.
 
-![Locked Doors Blueprint](Screenshots/LockedDoors.PNG)
+![Locked Doors Blueprint](Screenshots/LockedDoors2.PNG)
 
 To deactvate dropped keys I extended the dropped weapon blueprint to include the four keys. Simultaneously this removed a bug where if you dropped any weapon other than the gun, it would deactivate the axe. This blueprint worked well when those were the only items but as you can see in the following example, it becomes unwieldy when more items are added.
 
