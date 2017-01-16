@@ -31,4 +31,4 @@ SCP093 is made up of multiple levels. During early development, when transitioni
 
 A similar process has to be done at the start of a every level the player goes through. Just like how data must be saved to game instance before transfering to the next level. Data must be transferred back to the player at the start of entering a level. This allows the player to unlock doors in the bunker using a key found in the main map for example.
 
-![Saving to GameInstance](Screenshots/SavingtoGameInstance.PNG)
+![Saving to Player](Screenshots/SavingToPlayer.PNG)
