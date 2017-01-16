@@ -23,9 +23,13 @@ Locking the doors in Unreal was pretty simple. All it takes is a branch node req
 
 ![Locked Doors Blueprint](Screenshots/LockedDoors.PNG)
 
-# Persistent inventory through levels
+To deactvate dropped keys I extended the dropped weapon blueprint to include the four keys. Simultaneously this removed a bug where if you dropped any weapon other than the gun, it would deactivate the axe. This blueprint worked well when those were the only items but as you can see in the following example, it becomes unwieldy when more items are added.
 
-SCP093 is made up of multiple levels. During early development, when transitioning from one level to another, the items in your inventory disappear and variables that set functionality like AxeActive are reset. This is because the data isn't carried over when the player moves to a different level. A game instance blueprint solves this problem. Because Wu created the GameInstance to transfer the player over to a different level, all I had to do was add variables to the game instance and set them using the player's variables.
+![Deactivate Dropped Item Blueprint](Screenshots/DeactivateItem.PNG)
+
+# Persistent player data through levels
+
+SCP093 is made up of multiple levels. During early development, when transitioning from one level to another, the items in your inventory disappear and variables that set functionality like AxeActive are reset. This is because the data isn't carried over when the player moves to a different level. A game instance blueprint solves this problem. Because Wu created the GameInstance Blueprint to transfer the player over to a different level, all I had to do was add variables to the game instance and set them using the player's variables.
 
 ![Saving to GameInstance](Screenshots/SavingToGameInstance.PNG)
 
