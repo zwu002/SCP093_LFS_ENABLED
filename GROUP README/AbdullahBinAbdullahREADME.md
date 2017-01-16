@@ -9,7 +9,7 @@ At the beginning of the project, we had trouble handling Unreal because of their
 
 This lead to the next problem which was that Git LFS support on GitHub was free up until the monthly bandwidth limit was reached. GitHub allows for 1GB in bandwidth and storage. Unaware of such a limit, the team was cloning the project multiple times in order to get used to using git with the Unreal project and handling binary files. This lead to us reaching the limit very quickly and had to pay to raise the limit.
 
-![GitHub LFS Usage](Screenshots/GitHubBandwidth.PNG)
+![GitHub LFS Usage](Screenshots/GithubBandwidth.PNG)
 
 To date, this is the usage for Git LFS for this project on GitHub. When you buy a data pack to increase the quota, keep in mind that it is more like a subscription that a one-off expansion. Other problems encountered when introducing Git LFS is that sometimes when you clone the project, you are met with a black screen in the editor window. This is either because the version on the computer is different than the one that made the project or Git LFS hasn't pulled the assets from the server properly. 
 
@@ -27,7 +27,7 @@ Locking the doors in Unreal was pretty simple. All it takes is a branch node req
 
 SCP093 is made up of multiple levels. During early development, when transitioning from one level to another, the items in your inventory disappear and variables that set functionality like AxeActive are reset. This is because the data isn't carried over when the player moves to a different level. A game instance blueprint solves this problem. Because Wu created the GameInstance to transfer the player over to a different level, all I had to do was add variables to the game instance and set them using the player's variables.
 
-![Saving to GameInstance](Screenshots/SavingtoGameInstance.PNG)
+![Saving to GameInstance](Screenshots/SavingToGameInstance.PNG)
 
 A similar process has to be done at the start of a every level the player goes through. Just like how data must be saved to game instance before transfering to the next level. Data must be transferred back to the player at the start of entering a level. This allows the player to unlock doors in the bunker using a key found in the main map for example.
 
